@@ -1,9 +1,11 @@
 const nombre = document.querySelector(".nombre")
 const apellido = document.querySelector(".apellido")
-const numero = document.querySelector(".numero")
+const numerodecasa = document.querySelector(".numerodecasa")
 const ubicaciones = document.querySelector ("ubicacion")
 const ciudad = document.querySelector ("ciudad")
-const dirrecion = document.querySelector ("direccion")
+const dirreccion = document.querySelector ("direccion")
+const telefono = document.querySelector ("telefono")
+
 const local= window.localStorage 
 
 const listadodetareas = document.querySelector (".listado")
@@ -18,7 +20,10 @@ const eliminar = document.querySelector ("eliminar-tarea")
         id: Math.random (1,100),
         nombre:nombre.value,
         apellido: apellido.value,
-        numero: numero.value,
+        numerodecasa: numerodecasa.value,
+        telefono: telefono.value,
+        ubicaciones: ubicaciones.value,
+        ciudad: ciudad.value,
     
     }
     console.log (contacto)
